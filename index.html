@@ -1,20 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Hello, I'm <span>Your Name</span></h1>
-    <p>I'm a web developer passionate about building clean and responsive websites.</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ajit Gandole</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  text-uppercase shadow shadow sticky-top">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand font-weight-bold" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active px-lg-4 rounded"  href="#home">Home</a>
+              <a class="nav-link px-lg-4 rounded" href="#about">About</a>
+              <a class="nav-link px-lg-4 rounded" href="#education">Education</a>
+              <a class="nav-link px-lg-4 rounded" href="#project">Project</a>
+              <a class="nav-link px-lg-4 rounded" href="#contact">Contacts</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <div class="buttons">
-      <a href="assets/Ajit_Gandole_Tes_CV.pdf" download class="btn">📄 Download CV</a>
-      <a href="mailto:you@example.com" class="btn secondary">📧 Contact Me</a>
-    </div>
-  </div>
-</body>
+      <!-- main section starts here-->
+
+      <section class="main py-5 " id="home">
+        <div class="container-fluid py-5">
+            <div class="row py-5">
+                <div class="col-lg-6 py-5 text-center">
+                    <h3><small>Hello, I'm</small><br>
+                        AJIT GANDOLE
+                    </h3>
+                    <h6>Backend Developer</h6>
+                    <input type="button" value="Resume" class="bt1 mt-5 rounded mx-2" id="bt1">
+                    <input type="button" value="Contact" class="bt2 mt-5 rounded mx-2" id="bt2">
+                </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    
+
+      <!--About section begins here -->
+
+      <section class="about py-3"id="about">
+        <div class="container"style="max-width: 1140px;">
+            <div class="content text-center text-uppercase  ">
+            <h1 id="h1" class="text-decoration-underline">About me</h1>
+        </div>
+            <div class="row py-5">
+                <div class="col-12 col-md-6 text-center"><p>Recent graduate proficient in Java and Spring Boot, with foundational knowledge of web technologies. Seeking an entry-level role to leverage skills, learn from experienced professionals, and build innovative solutions and make a significant contribution in challenging Software development role.</p></div>
+             
+                <div class="col-lg-6" id="pro">
+                    <div class="progress">
+                        <div class="pro-value1 ">
+                            <p>HTML/CSS <span class="text-white">95%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress my-3">
+                        <div class="pro-value2">
+                            <p>Javascript <span class="text-white">65%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="pro-value3">
+                            <p>Java & J2EE <span class="text-white">85%</span></p>
+                        </div>
+                    </div>
+                    <div class="progress my-3">
+                        <div class="pro-value4">
+                            <p>SQL <span class="text-white">75%</span></p>
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+      </section>
+
+      <!--Education section begins here -->
+
+      <section class="education py-5 bg-light" id="education">
+        <div class="container py-5">
+            <div class="content text-center text-uppercase  ">
+                <h1 id="h1"  class="text-decoration-underline">Education</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="text-center font-weight-bold pb-2">Engineering</h4>
+                            <p>Electronics and Communication Engineering graduate (2020-2024) from Jain College of Engineering. Proficient in circuit design and communication systems, now transitioning to pursue a career in Java Full Stack Development for software solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="text-center font-weight-bold pb-2">Intern</h4>
+                            <p>I was selected as an incubation student in the CGL program at JSPIDER Bangalore, a private organization. I learned Java, J2EE, Spring, SQL, HTML, CSS, JavaScript, and ReactJS, developing comprehensive full-stack development skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="text-center font-weight-bold pb-2">Course-Work</h4>
+                            <p>Completed an internship as an Embedded Full Stack IoT Developer at GTTC Hubballi. Gained hands-on experience in developing and integrating IoT systems, enhancing skills in hardware, software, and full-stack development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+        <!--Project  section begins here -->
+
+      <section class="project py-5"id="project">
+        <div class="container py-5">
+            <div class="content text-center text-uppercase  ">
+                <h1 id="h1" class="text-decoration-underline">Project</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="text-center font-weight-bold pb-2">Enterprise-Level Data Management System</h4>
+                            <p>Developed a data management system using Spring and React for frontend-backend communication. Utilized Axios for CRUD operations, with Hibernate for database interaction and table creation, ensuring seamless data flow and storage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="text-center font-weight-bold pb-2">Spring-Crud</h4>
+                            <p>Implemented Spring CRUD operations with Hibernate for database interactions. Used Spring Data JPA to manage entities, perform CRUD actions, and automatically create tables in the database for efficient data management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="text-center font-weight-bold pb-2">Attendance Management System</h4>
+                            <p>Developed an Attendance Management System using Servlets and JSP. Implemented CRUD operations for managing attendance data, with JDBC for database interactions and automatic table creation, ensuring efficient attendance tracking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!--Project section begins here --> <!--decided to split the col and provide contact details-->
+            <section class="contacts" id="contact">
+        <div class="container">
+            <div class="content text-center text-uppercase  ">
+                <h1 id="h1" class="text-decoration-underline">Contacts</h1>
+            </div>
+            <div class="row py-3">
+                <div class="col-6">
+                    <ul class="socials text-start">
+                    <a href="https://www.linkedin.com/in/g-ajit-29aa53339/" alt="" target="_blank"><i class="fa-brands fa-linkedin fa-2x icon-black "></i></a>
+                    <a href="https://github.com/AjitGandole" alt="" target="_blank"><i class="fa-brands fa-square-github fa-2x px-3 icon-black"></i></a>
+                    <a href="mailto:gandoleajit@gmail.com"  rel="noopener noreferrer" aria-label="Send Email">
+                        <i class="fa fa-envelope icon-black" aria-hidden="true" style="font-size:24px; color:#0a0a0a;"></i>
+                      </a>
+                </ul>
+                </div>
+                <div class="col-6">
+                    <div class="container">
+                        <ul class="text-end">
+                            <li class="phno ">+91-8088936953</li>
+                            <li class="gmail"><a href="" alt="">gandoleajit@gmail.com</a></li>
+                           <li class="location"><i class="fa-solid fa-location-dot"> Bangalore</i></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+   
+      
+  </body>
 </html>
