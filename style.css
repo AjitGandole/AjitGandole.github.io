@@ -1,61 +1,238 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
+*{
+    font-family: "Ubuntu", sans-serif;
     padding: 0;
-    background: #f4f4f4;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* bootstrap's navbar z-index */
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .container {
-    text-align: center;
-    background: white;
-    padding: 3em 2em;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  }
-  
-  h1 {
-    font-size: 2em;
-  }
-  
-  h1 span {
-    color: #0077cc;
-  }
-  
-  p {
-    font-size: 1.1em;
-    margin: 0.5em 0 2em;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-  }
-  
-  .btn {
-    padding: 0.75em 1.5em;
+navbar{
+    background-color: white;
+}
+.nav-link{
+    color: black;
+    font-size:1rem;
+    font-weight: 600;
+    cursor: pointer;
     text-decoration: none;
-    background-color: #0077cc;
+}
+.nav-link:hover{
     color: white;
-    border-radius: 5px;
+    background-color: black;
+}
+.navbar-brand{
+    color: black;
+    font-size:1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main h3 {
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.main h6{
+    font-size: 1.4rem;
+    width:100%
+}
+.main .bt1{
+    height: 14%;
+    width:80px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
     font-weight: bold;
-    transition: background 0.3s;
+    border-radius: 15px;
+}
+.main .bt1:hover{
+    background-color: white;
+    color: black;
+
+}
+.main .bt2{
+    height: 14%;
+    width:80px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.main .bt2:hover{
+    background-color: white;
+    color: black;
+}
+.about h1{
+    color: black;
+    font-size:3rem;
+    font-weight: 700;
+}
+#pro {
+    max-width: 500px; /* or any desired value */
+    margin: 0 auto; /* center the element */
+}
+
+.progress{
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+}
+#pro .progress {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px ;
+    width: 0;
+    display: flex; 
+    align-items: center; 
+}
+.progress p{
+    color: white;
+    padding: 5px;
+    margin: 0; /* Remove default margins to avoid spacing issues */
+    display: flex; /* Make sure text is inline */
+    width: 100%; /* So span can take the full width */
+}
+.progress p span {
+    margin-left: auto; /* This pushes the span to the right */
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px ;
+    width: 0;
+    display: flex; 
+    align-items: center;
+    
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px ;
+    width: 0;
+    display: flex; 
+    align-items: center; 
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px ;
+    width: 0;
+    display: flex; 
+    align-items: center; 
+}
+
+.education h1{
+    color: black;
+    font-size:3rem;
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+    outline: none;
+    height: 100%; /* works with .h-100 from Bootstrap */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    display: flex;
+    flex-direction: column;
   }
   
-  .btn:hover {
-    background-color: #005fa3;
+  .card-body {
+    flex-grow: 1; /* ensure body takes full height */
+    color: #6c757d; /* Bootstrap's "text-muted" grey */
   }
   
-  .btn.secondary {
-    background-color: #555;
+  .card-body h4 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #212529; /* dark heading color */
   }
   
-  .btn.secondary:hover {
-    background-color: #333;
+.project h1{
+    color: black;
+    font-size:3rem;
+    font-weight: 700;
+}
+.contacts h1{
+    color: black;
+    font-size:3rem;
+    font-weight: 700;
+}
+.contacts ul{
+    color:black;
+    list-style-type: none;
+
+}
+.icon-black {
+    color: black !important;
+    font-size: 30px !important;
+  }
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* ensures navbar stays above other content */
+    background-color: #fff; /* optional, to avoid content behind showing through */
   }
   
+  /* h1, h2, h3, h4, h5, h6 {
+    border-bottom: 2px solid #000; /* black solid underline */
+    /* padding-bottom: 5px; */
+    /* display: inline-block; shrink underline to text width  */
+ 
+  
+
+
+@keyframes load1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 98%;
+    }
+}
+@keyframes load2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes load3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes load4 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
